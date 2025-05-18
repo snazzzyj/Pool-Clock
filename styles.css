@@ -1,3 +1,32 @@
+body {
+  background-color: #002506;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.clock-container {
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#clock-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 52px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
 .clock {
   width: 600px;
   height: 600px;
@@ -6,6 +35,8 @@
   position: relative;
   border: 20px solid;
   border-color: #013c0b;;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(0, 0, 0, 0.2);
+
 }
 
 .center-dot {
@@ -41,6 +72,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+
 }
 
 .pool-ball {
@@ -52,6 +85,7 @@
   align-items: center;
   position: relative;
   transform: rotate(calc(-1 * var(--rotation)));
+  
 }
 
 .hand {
