@@ -1,0 +1,107 @@
+.clock {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: #0C6E1D;
+  position: relative;
+  border: 20px solid;
+  border-color: #013c0b;;
+}
+
+.center-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.number-position {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+}
+
+.pocket {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #064014;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pool-ball {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: rotate(calc(-1 * var(--rotation)));
+}
+
+.hand {
+  position: absolute;
+  transform-origin: bottom center;
+  bottom: 50%;
+  left: 50%;
+  border-radius: 4px;
+}
+
+.hour-hand{
+  width: 8px;
+  height: 25%;
+  background-color: white;
+  transform: translateX(-50%) rotate(0deg);
+  z-index: 8;
+}
+
+.minute-hand{
+  width: 4px;
+  height: 35%;
+  background-color: white;
+  transform: translateX(50%) rotate(0deg);
+  z-index: 9;
+}
+
+.second-hand{
+  width: 2px;
+  height: 40%;
+  background-color: red;
+  transform: translateX(50%) rotate(0deg);
+  z-index: 10;
+}
+
+.stripe {
+  position: aboslute;
+  width: 44px;
+  height: 22px;
+  border-radius: 22px 22px 0 0;
+  background-color: white;
+  top: 0;
+}
+
+.white-circle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
